@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="temporary.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+
+  <div id="grid">
+
+    <header id="box-1">
+      <img id="box-1__logo" src="assets/images/logo.svg" alt="logo">
+      <img onclick="openMenu()" id="box-1__menu-mobile-hamburger" src="assets/images/icon-menu.svg" alt="icon-menu">
+      <div id="box-1__menu-desktop">
+        <a href="#">
+          Home
+        </a>
+        <a href="#">
+          New
+        </a>
+        <a href="#">
+          Popular
+        </a>
+        <a href="#">
+          Trending
+        </a>
+        <a href="#">
+          Categories
+        </a>
+      </div>
+
+      <div id="box-1__menu">
+        <img onclick="closeMenu()" id="box-1__menu-close" src="assets/images/icon-menu-close.svg" alt="icon-menu-close">
+        <div id="box-1__menu-list">
+          <a href="#">
+            Home
+          </a>
+          <a href="#">
+            New
+          </a>
+          <a href="#">
+            Popular
+          </a>
+          <a href="#">
+            Trending
+          </a>
+          <a href="#">
+            Categories
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div id="box-2"></div>
+
+    <div id="box-3">
+      <h3 id="box-3__heading">New</h3>
+      <div id="box-3__post-1" class="box-3__post">
+        <p class="box-3__post--title">
+          Hydrogen VS Electric Cars
+        </p>
+        <p class="box-3__post--sub-title">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </div>
+      <div id="box-3__post-2" class="box-3__post">
+        <p class="box-3__post--title">
+          The Downsides of AI Artistry
+        </p>
+        <p class="box-3__post--sub-title">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </div>
+      <div id="box-3__post-3" class="box-3__post">
+        <p class="box-3__post--title">
+          Is VC Funding Drying Up?
+        </p>
+        <p class="box-3__post--sub-title">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </div>
+    </div>
+    
+    <div id="box-4">The Bright Future of Web 3.0?</div>
+
+    <div id="box-5">
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p>
+      <button id="box-5__button">
+        Read more
+      </button>
+    </div>
+
+    <div id="box-6">
+      <img class="box__image" src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
+      <div class="box__text">
+        <p class="box__text--number">
+          01
+        </p>
+        <p class="box__text--title">
+          Reviving Retro PCs
+        </p>
+        <p class="box__text--subtitle">
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </div>
+    </div>
+
+    <div id="box-7">
+      <img class="box__image" src="assets/images/image-top-laptops.jpg" alt="image-top-laptops">
+      <div class="box__text">
+        <p class="box__text--number">
+          02
+        </p>
+        <p class="box__text--title">
+          Top 10 Laptops of 2022
+        </p>
+        <p class="box__text--subtitle">
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
+    </div>
+
+    <div id="box-8">
+      <img class="box__image" src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+      <div class="box__text">
+        <p class="box__text--number">
+          03
+        </p>
+        <p class="box__text--title">
+          The Growth of Gaming
+        </p>
+        <p class="box__text--subtitle">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="filter"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
